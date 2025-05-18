@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Safiy Farooqi</title>
+  <style>
+    :root {
+      --primary-blue: #4B9CD3;
+      --light-gray: #F7F8FA;
+      --gray: #E0E0E0;
+      --dark-gray: #333;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: var(--light-gray);
+      color: var(--dark-gray);
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1.75rem 2rem;
+      display: flex;
+    }
+    nav a {
+      margin-right: 3rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: var(--dark-gray);
+      text-decoration: none;
+    }
+    nav a:hover, nav a.active {
+      color: var(--primary-blue);
+    }
+
+    section#contact {
+      flex: 1;
+      margin: 0.5rem;
+      padding: 1rem;
+      background: var(--white);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #contact h2 {
+      font-size: 2.6rem;
+      color: var(--primary-blue);
+      margin-bottom: 1.5rem;
+    }
+    #contact p {
+      font-size: 1.3rem;
+      margin: 0.5rem 0;
+    }
+    #contact a {
+      font-size: 1.3rem;
+      color: var(--primary-blue);
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+    .contact-icons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .contact-icons img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: var(--white);
+      border-top: 1px solid var(--gray);
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Phone: (336) 340-6139</p>
+    <p>Email: <a href="mailto:safiyfarooqi@gmail.com">safiyfarooqi@gmail.com</a></p>
+    <div class="contact-icons">
+      <a href="https://github.com/safiy-farooqi" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" />
+      </a>
+      <a href="https://linkedin.com/in/safiyf" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Logo" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Safiy Farooqi
+  </footer>
+</body>
+</html>
