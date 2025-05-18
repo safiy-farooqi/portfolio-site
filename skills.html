@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Skills | Safiy Farooqi</title>
+  <style>
+    :root {
+      --primary-blue: #4B9CD3;
+      --light-gray: #F7F8FA;
+      --gray: #E0E0E0;
+      --dark-gray: #333;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: var(--light-gray);
+      color: var(--dark-gray);
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1.75rem 2rem;
+      display: flex;
+    }
+    nav a {
+      margin-right: 3rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: var(--dark-gray);
+      text-decoration: none;
+    }
+    nav a:hover, nav a.active {
+      color: var(--primary-blue);
+    }
+
+    section#skills {
+      flex: 1;
+      margin: 0.5rem;
+      padding: 1rem;
+      background: var(--white);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    #skills h2 {
+      font-size: 2.6rem;
+      color: var(--primary-blue);
+      margin-bottom: 2rem;
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 120px;
+    }
+    .skill-item img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 0.75rem;
+    }
+    .skill-item span {
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: var(--white);
+      border-top: 1px solid var(--gray);
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" />
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" />
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" />
+        <span>HTML5</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" />
+        <span>CSS3</span>
+      </div>
+      <div class="skill-item">
+        <img src="assets/microsoft-office-logo.svg" alt="MS Office Logo" />
+        <span>MS Office</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" />
+        <span>Git</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" />
+        <span>GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Safiy Farooqi
+  </footer>
+</body>
+</html>

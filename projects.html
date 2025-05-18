@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Safiy Farooqi</title>
+  <style>
+    :root {
+      --primary-blue: #4B9CD3;
+      --light-gray: #F7F8FA;
+      --gray: #E0E0E0;
+      --dark-gray: #333;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: var(--light-gray);
+      color: var(--dark-gray);
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--gray);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1.75rem 2rem;
+      display: flex;
+    }
+    nav a {
+      margin-right: 3rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: var(--dark-gray);
+      text-decoration: none;
+    }
+    nav a:hover, nav a.active {
+      color: var(--primary-blue);
+    }
+
+    section#projects {
+      flex: 1;
+      margin: 0.5rem;
+      padding: 1rem;
+      background: var(--white);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    #projects h2 {
+      align-self: center;
+      font-size: 2.6rem;
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 1rem;
+      gap: 2rem;
+    }
+    .project-card {
+      position: relative;
+      width: 500px;
+      height: 360px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .project-card .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+    }
+    .project-card .overlay h3 {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .project-card .overlay a.button {
+      padding: 0.75rem 1.5rem;
+      background: var(--primary-blue);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .project-card .overlay a.button:hover {
+      background: #3a8cb8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: var(--white);
+      border-top: 1px solid var(--gray);
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="assets/title-bg copy.png" alt="Dungeon Crawler Screenshot" />
+        <div class="overlay">
+          <h3>Dungeon Crawler Full Stack Game</h3>
+          <a class="button" href="https://github.com/safiy-farooqi/dungeon-crawler" target="_blank">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+      <!-- Add more .project-card blocks here to the right -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Safiy Farooqi
+  </footer>
+</body>
+</html>
