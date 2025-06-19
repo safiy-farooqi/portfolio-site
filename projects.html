@@ -6,29 +6,24 @@
   <title>Projects | Safiy Farooqi</title>
   <style>
     :root {
-      --primary-blue: #4B9CD3;
-      --light-gray: #F7F8FA;
-      --gray: #E0E0E0;
-      --dark-gray: #333;
-      --white: #fff;
+      --bg-dark: #121212;
+      --panel-dark: #1e1e1e;
+      --text-light: #e0e0e0;
+      --primary-neon: #00e5ff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       font-family: Arial, sans-serif;
-      background: var(--light-gray);
-      color: var(--dark-gray);
+      background: var(--bg-dark);
+      color: var(--text-light);
     }
-
     header {
-      background: var(--white);
-      border-bottom: 1px solid var(--gray);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      background: var(--panel-dark);
+      border-bottom: 1px solid #333;
+      position: sticky; top: 0; z-index: 100;
     }
     nav {
       max-width: 100%;
@@ -40,45 +35,45 @@
       margin-right: 3rem;
       font-size: 1.3rem;
       font-weight: bold;
-      color: var(--dark-gray);
+      color: var(--text-light);
       text-decoration: none;
     }
-    nav a:hover, nav a.active {
-      color: var(--primary-blue);
+    nav a:hover,
+    nav a.active {
+      color: var(--primary-neon);
     }
 
     section#projects {
       flex: 1;
       margin: 0.5rem;
-      padding: 1rem;
-      background: var(--white);
-      border-radius: 4px;
+      padding: 1.5rem;
+      background: var(--panel-dark);
+      border-radius: 6px;
       display: flex;
       flex-direction: column;
       text-align: center;
     }
     #projects h2 {
+      font-size: 2.8rem;
+      color: var(--primary-neon);
+      margin-bottom: 1.5rem;
       align-self: center;
-      font-size: 2.6rem;
-      color: var(--primary-blue);
-      margin-bottom: 1rem;
     }
     .projects-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-left: 1rem;
+      margin: auto 1rem;
       gap: 2rem;
     }
     .project-card {
       position: relative;
       width: 500px;
       height: 360px;
+      background: #000;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
       flex-shrink: 0;
     }
     .project-card img {
@@ -90,38 +85,38 @@
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 1rem;
-      text-align: center;
     }
     .project-card .overlay h3 {
-      color: #fff;
-      font-size: 1.8rem;
+      color: var(--primary-neon);
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
     .project-card .overlay a.button {
       padding: 0.75rem 1.5rem;
-      background: var(--primary-blue);
-      color: var(--white);
+      background: var(--primary-neon);
+      color: var(--bg-dark);
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
       font-size: 1rem;
     }
     .project-card .overlay a.button:hover {
-      background: #3a8cb8;
+      background: #00c4d9;
     }
 
     footer {
       text-align: center;
       padding: 1.5rem 0;
-      background: var(--white);
-      border-top: 1px solid var(--gray);
+      background: var(--panel-dark);
+      border-top: 1px solid #333;
       font-size: 1.1rem;
+      color: var(--text-light);
     }
   </style>
 </head>
@@ -139,15 +134,24 @@
     <h2>Projects</h2>
     <div class="projects-container">
       <div class="project-card">
-        <img src="assets/title-bg copy.png" alt="Dungeon Crawler Screenshot" />
+        <img src="assets/title-bg-copy.png" alt="Dungeon Crawler Screenshot" />
         <div class="overlay">
-          <h3>Dungeon Crawler Full Stack Game</h3>
+          <h3>Dungeon Crawler Game</h3>
           <a class="button" href="https://github.com/safiy-farooqi/dungeon-crawler" target="_blank">
             View on GitHub
           </a>
         </div>
       </div>
-      <!-- Add more .project-card blocks here to the right -->
+      <div class="project-card">
+        <img src="assets/credit-score background.png" alt="Credit Score Model Screenshot" />
+        <div class="overlay">
+          <h3>Credit Scoring Model</h3>
+          <a class="button" href="https://github.com/safiy-farooqi/credit-score-model" target="_blank">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+      <!-- add more cards here -->
     </div>
   </section>
 

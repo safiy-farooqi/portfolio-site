@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Safiy Farooqi | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     :root {
-      --primary-blue: #4B9CD3;
-      --light-gray: #F7F8FA;
-      --gray: #E0E0E0;
-      --dark-gray: #333;
-      --white: #fff;
+      --bg-dark: #121212;
+      --panel-dark: #1e1e1e;
+      --text-light: #e0e0e0;
+      --primary-neon: #00e5ff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       font-family: Arial, sans-serif;
-      background: var(--light-gray);
-      color: var(--dark-gray);
+      background: var(--bg-dark);
+      color: var(--text-light);
     }
-
     header {
-      background: var(--white);
-      border-bottom: 1px solid var(--gray);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      background: var(--panel-dark);
+      border-bottom: 1px solid #333;
+      position: sticky; top: 0; z-index: 100;
     }
     nav {
       max-width: 100%;
@@ -41,51 +36,85 @@
       margin-right: 3rem;
       font-size: 1.3rem;
       font-weight: bold;
-      color: var(--dark-gray);
+      color: var(--text-light);
       text-decoration: none;
     }
-    nav a:hover, nav a.active {
-      color: var(--primary-blue);
+    nav a:hover,
+    nav a.active {
+      color: var(--primary-neon);
     }
 
     section#home {
       flex: 1;
-      margin: 0.5rem;
-      padding: 1rem;
-      background: var(--white);
-      border-radius: 4px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      text-align: left;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background: var(--panel-dark);
     }
+
+    .home-image, .home-text {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .home-image img {
-      width: 250px;
-      height: 250px;
+      width: 400px;
+      height: 400px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid var(--primary-blue);
+      border: 6px solid var(--primary-neon);
     }
+
     .home-text {
-      max-width: 600px;
-      margin-left: 2rem;
+      flex-direction: column;
+      text-align: left;
+      padding-left: 2rem;
     }
+
     .home-text h1 {
-      font-size: 3rem;
-      color: var(--primary-blue);
-      margin-bottom: 0.75rem;
+      font-size: 4rem;
+      color: var(--primary-neon);
+      margin-bottom: 1.2rem;
     }
+
     .home-text p {
-      font-size: 1.3rem;
-      line-height: 1.6;
+      font-size: 1.7rem;
+      line-height: 2;
+      max-width: 700px;
     }
 
     footer {
       text-align: center;
       padding: 1.5rem 0;
-      background: var(--white);
-      border-top: 1px solid var(--gray);
+      background: var(--panel-dark);
+      border-top: 1px solid #333;
       font-size: 1.1rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      section#home {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
+      .home-image, .home-text {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .home-text {
+        padding-left: 0;
+        margin-top: 2rem;
+      }
+      .home-text h1 {
+        font-size: 2.5rem;
+      }
+      .home-text p {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -101,7 +130,7 @@
 
   <section id="home">
     <div class="home-image">
-      <img src="your-photo.jpg" alt="Safiy Farooqi" />
+      <img src="assets/safiy.jpg" alt="Photo of Safiy Farooqi"/>
     </div>
     <div class="home-text">
       <h1>Safiy Farooqi</h1>
